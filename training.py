@@ -65,14 +65,49 @@
 #     elif(n ==0): user= False
             
     
-def print_hello():
-    print("hello world") 
-# print_hello()
+# def print_hello():
+#     print("hello world") 
+# # print_hello()
 
 
-def add(a,b):
-    return a+b
-print (add(2,6))    
+# def add(a,b):
+#     return a+b
+# print (add(2,6))    
 
 
 
+# class college :
+#     colleges = "ITM University"
+#     def __init__(self, name):
+#         self.name = name
+        
+#     def info(self):
+#         print(f"The name of the student is {self.name} and she studies in {self.colleges}")
+        
+# coll = college("Khushi")
+
+# # print (coll.name)
+# # print (coll.colleges)
+
+# coll.info()        
+
+
+class bankaccount:
+    def __init__(self, balance):
+        self.balance = balance
+        
+    def deposit (self,amount):
+        self.balance+=amount
+        
+    def show_balance(self):
+        print (f"Total balance: {self.balance}")
+        
+    def withdraw_balance (self,with_amount):
+        self.balance-=with_amount
+        
+acc= bankaccount(2000)
+acc.show_balance()
+acc.deposit(500)
+acc.show_balance()
+acc.withdraw_balance(2000)
+acc.show_balance()
