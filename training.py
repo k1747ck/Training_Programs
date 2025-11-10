@@ -92,22 +92,25 @@
 # coll.info()        
 
 
-class bankaccount:
-    def __init__(self, balance):
-        self.balance = balance
+# class bankaccount:
+#     def __init__(self, balance):
+#         self.balance = balance
         
-    def deposit (self,amount):
-        self.balance+=amount
+#     def deposit (self,amount):
+#         self.balance+=amount
         
-    def show_balance(self):
-        print (f"Total balance: {self.balance}")
+#     def show_balance(self):
+#         print (f"Total balance: {self.balance}")
         
-    def withdraw_balance (self,with_amount):
-        self.balance-=with_amount
+#     def withdraw_balance (self,with_amount):
+#         self.balance-=with_amount
         
-acc= bankaccount(2000)
-acc.show_balance()
-acc.deposit(500)
-acc.show_balance()
-acc.withdraw_balance(2000)
-acc.show_balance()
+# acc= bankaccount(2000)
+# acc.show_balance()
+# acc.deposit(500)
+# acc.show_balance()
+# acc.withdraw_balance(2000)
+# acc.show_balance()
+
+
+
