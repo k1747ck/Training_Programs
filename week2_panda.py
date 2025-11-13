@@ -73,6 +73,11 @@ df3 = pd.read_csv("quikr_car.csv",encoding="latin-1")
 # print(df3['Price'].unique)
 
 
-df3 = df3[df3['Price']!= 'Ask For Price']
-df3['Price'] = df3['Price'].str.replace(',','').astype(int)
-print(df3['Price'])
+# df3 = df3[df3['Price']!= 'Ask For Price']
+# df3['Price'] = df3['Price'].str.replace(',','').astype(int)
+# # print(df3['Price'])
+
+
+# this is wrong therefore it is creating an error
+# hf = pd.read_csv('zomato.csv')
+# hf[hf['Rating text']== 'Excellent']['Country']
