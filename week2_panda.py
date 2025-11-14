@@ -81,3 +81,37 @@ df3 = pd.read_csv("quikr_car.csv",encoding="latin-1")
 # this is wrong therefore it is creating an error
 # hf = pd.read_csv('zomato.csv')
 # hf[hf['Rating text']== 'Excellent']['Country']
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data= {
+    'Category': ['Electronics','Clothing', 'Grociries', 'Toys' , 'Furniture'],
+    'Revenue': [55000,32000,21000,15000,40000],
+    'Profit': [12000,7000,5000,2000,9000],
+    'Quantity': [120,230,300,150,100]
+}
+
+# line plot - to visualize tread over time or continuous data
+# why: show how values change sequentially
+
+# print(plt.figure(figsize=(6,4)))
+# print(plt.plot(data['Category'],data['Revenue']))
+
+
+# # plt.show()
+
+# sns.barplot(x='Category', y='Revenue', data=data)
+# plt.title("Seaborn Bar Plot - Revenue by Category")
+
+# plt.show()
+
+
+
+# histogram
+
+plt.figure(figsize=(6,4))
+plt.hist(data['Revenue'],bins=10,color='orange',edgecolor='black')
+plt.title("Histogram")
+plt.xlabel('Revenue')
+plt.ylabel()
